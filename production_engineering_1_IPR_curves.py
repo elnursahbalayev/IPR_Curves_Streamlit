@@ -13,12 +13,12 @@ if status == 'Calculations':
                                                            'Production Index',
                                                            'Maximum Flow Rate'])
 
-    Pres = float(st.text_input('Enter Reservoir Pressure: '))
-    Pwf = float(st.text_input('Enter Flowing Wellbore Pressure: '))
-    Q = float(st.text_input('Enter Flow Rate'))
-    Pb = float(st.text_input('Enter Bubble Pressure'))
-    J = float(st.text_input('Enter Productivity Index'))
-    Qmax = float(st.text_input('Enter Maximum Flow Rate'))
+    Pres = (st.number_input('Enter Reservoir Pressure: '))
+    Pwf = (st.number_input('Enter Flowing Wellbore Pressure: '))
+    Q = (st.number_input('Enter Flow Rate'))
+    Pb = (st.number_input('Enter Bubble Pressure'))
+    J = (st.number_input('Enter Productivity Index'))
+    Qmax = (st.number_input('Enter Maximum Flow Rate'))
     condition = 'undersaturated'
 
     def find_Pres(Pwf, Q, Pb, J):
